@@ -16,14 +16,13 @@ using namespace glm;
 using namespace std;
 
 std::vector<glm::vec3> vertices;
-// indices需unsigned int
 std::vector<unsigned int> indices;
 GLuint shaderProgram;
 GLuint VBO, VAO, EBO;
 glm::mat4 MVP;
 glm::mat4 finalMVP;
 
-vec3 camPos;
+glm::vec3 camPos;
 vec3 camLook;
 vec3 camUp;
 
@@ -286,9 +285,9 @@ int main(int argc, char *argv[])
 
 	glutInit(&argc, argv);
 	glutInitDisplayMode(GLUT_RGB | GLUT_DOUBLE);
-	glutInitWindowPosition(150, 200); // 設定?窗位置 
-	glutInitWindowSize(400, 400); // 設定?窗大小 
-	glutCreateWindow("RTR_HW01_0656632"); // 設定?窗標題
+	glutInitWindowPosition(150, 200);
+	glutInitWindowSize(400, 400);
+	glutCreateWindow("RTR_HW01_0656632");
 
 	glutDisplayFunc(Display);
 
